@@ -1,0 +1,16 @@
+#tonen{
+width: 145px;
+	height: 30px;
+	text-align: right;
+}
+
+.button{
+    width: 30px;
+	height: 30px;
+	margin: 2px;
+}
+
+.button:hover{
+    background-color: #00FFFF;
+}
+
