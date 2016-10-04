@@ -4,8 +4,8 @@
 	<title>Rekenmachine</title>
  </head>
  <body>
-	<form name="rekenmachine">
-	<input type="text" id="display" placeholder="0">
+<form name="rekenmachine">
+	<input type="text" id="tonen" placeholder="0">
 	<br>
     <input class="button" type="button" value="1" onclick="krijgwaarde(this.value)">
 	<input class="button" type="button" value="2" onclick="krijgwaarde(this.value)">
@@ -22,16 +22,20 @@
 	<input class="button" type="button" value="9" onclick="krijgwaarde(this.value)">
 	<input class="button" type="button" value="/" onclick="krijgwaarde(this.value)">
 	<br>
-    <input class="button" type="button" value="=" onclick="uitrekenen()">
+    <input class="button" type="button" value="=" onclick="berekenen()">
 	<input class="button" type="button" value="0" onclick="krijgwaarde(this.value)">
 	<input class="button" type="button" value="." onclick="krijgwaarde(this.value)">
 	<input class="button" type="button" value="-" onclick="krijgwaarde(this.value)">
 	<input id="Ctoets" type="button" value="c" onclick="wegdoen()">
-
-	</form>
+</form>
 	
  <script>
-	
+	var i = "";
+    function krijgwaarde(getal) {
+        i = getal+getal;
+        document.getElementById("tonen").value = i;
+    }
+
 	</script>
 </body>
 </html>
